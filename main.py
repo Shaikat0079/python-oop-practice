@@ -24,7 +24,8 @@ class Item:
         return self.price * self.quantity
 
 
-item1 = Item("Phone",100,-1)
+# item1 = Item("Phone",100,-1)
+item1 = Item("Phone",100,5)
 # item1.name = "Phone"
 # item1.price = 100
 # item1.quantity = 5
