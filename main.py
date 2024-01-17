@@ -9,13 +9,13 @@
 # print(type(item1_price_total)) #int
 
 class Item:
-    def __init__(self,name,price,quantity):
+    def __init__(self,name,price,quantity = 0):
         # print(f"An instance Created:{name}")
         self.name = name
         self.price = price
         self.quantity = quantity
-    def calculat_total_price(self,x,y):
-        return x * y
+    def calculat_total_price(self):
+        return self.price * self.quantity
 
 
 item1 = Item("Phone",100,5)
@@ -31,13 +31,13 @@ item2 = Item("Laptop",1000,3)
 # print(item2.calculat_total_price(item2.price,item2.quantity))
 
 
-print(item1.name)
-print(item1.price)
-print(item1.quantity)
-print(item2.name)
-print(item2.price)
-print(item2.quantity)
-
+# print(item1.name)
+# print(item1.price)
+# print(item1.quantity)
+# print(item2.name)
+# print(item2.price)
+# print(item2.quantity)
+# item2.has_numpad = False
 
 
 # print(type(item1))
@@ -47,3 +47,6 @@ print(item2.quantity)
 
 # random_str = "aaa"
 # print(random_str.upper())
+
+print(item1.calculat_total_price())
+print(item2.calculat_total_price())
