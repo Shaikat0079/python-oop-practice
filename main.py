@@ -13,8 +13,8 @@ class Item:
         # print(f"An instance Created:{name}")
         # Run Validatiions to the received Arguments
 
-        assert price >= 0
-        assert quantity >= 0
+        assert price >= 0, f"Price {price} should be grater or == 0"
+        assert quantity >= 0, f"Quantity {quantity} should be grater or == 0"
 
         #Assign to self Object
         self.name = name
@@ -24,7 +24,7 @@ class Item:
         return self.price * self.quantity
 
 
-item1 = Item("Phone",100,5)
+item1 = Item("Phone",100,-1)
 # item1.name = "Phone"
 # item1.price = 100
 # item1.quantity = 5
