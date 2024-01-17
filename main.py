@@ -9,8 +9,14 @@
 # print(type(item1_price_total)) #int
 
 class Item:
-    def __init__(self,name,price,quantity = 0):
+    def __init__(self,name:str,price:float,quantity = 0):
         # print(f"An instance Created:{name}")
+        # Run Validatiions to the received Arguments
+
+        assert price >= 0
+        assert quantity >= 0
+
+        #Assign to self Object
         self.name = name
         self.price = price
         self.quantity = quantity
