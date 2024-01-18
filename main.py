@@ -45,8 +45,24 @@ class Item:
             items = list(reader)
         
         for item in items:
-            print(item)
+            # print(item)
+            Item(
+                name=item.get('name'),
+                price=float(item.get('price')),
+                quantity=int(item.get('quantity'))
+            )
 
+    @staticmethod
+    def is_integer(num):
+        # We will count out the floats that are point zero
+        # for i.e: 5.0, 10.0
+        if isinstance(num,float):
+            #Count out the floats that are point zero
+            return num.is_integer()
+        elif isinstance(num,int):
+            return True
+        else:
+            return False
 
 
     def __repr__(self) -> str:
@@ -117,4 +133,7 @@ class Item:
 # print(Item.all)
 
 Item.instantiate_from_csv()
-    
+print(Item.all)
+print(Item.is_integer(7))
+print(Item.is_integer(7.0))
+print(Item.is_integer(7.5))
