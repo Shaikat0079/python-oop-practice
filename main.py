@@ -163,3 +163,17 @@
 # print(Item.all)
 
 # print(Phone.all)
+
+from item import Item
+from phone import Phone
+
+# Item.instantiate_from_csv()
+
+# print(Item.all)
+
+item1 = Item("MyItem",750)
+print(item1.name)
+#setting Attribute
+item1.name = "OtherTeam"
+#Getting attribute
+print(item1.name)

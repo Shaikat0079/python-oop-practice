@@ -14,13 +14,13 @@ class Phone(Item):
 
 
 
-phone1 = Phone("iPhone14",1300,5,1)
-# phone1.broken_phones = 1
-phone2 = Phone("iPhone15",1400,5,1)
-# phone2.broken_phones = 1
+# phone1 = Phone("iPhone14",1300,5,1)
+# # phone1.broken_phones = 1
+# phone2 = Phone("iPhone15",1400,5,1)
+# # phone2.broken_phones = 1
 
-print(phone1.calculate_total_price())
+# print(phone1.calculate_total_price())
 
-print(Item.all)
+# print(Item.all)
 
-print(Phone.all)
+# print(Phone.all)
